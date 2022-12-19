@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".SocialMediaActivity" >
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Welcome"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imgPost"
+        android:layout_width="match_parent"
+        android:layout_height="225dp"
+        android:clickable="true"
+        android:padding="10dp"
+        app:srcCompat="@drawable/plus" />
+
+    <Button
+        android:id="@+id/btnPost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="create post" />
+
+    <EditText
+        android:id="@+id/edtDes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Add description to the image"
+        android:inputType="textPersonName"
+        android:visibility="invisible" />
+
+    <ListView
+        android:id="@+id/usersListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

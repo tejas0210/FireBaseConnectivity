@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp"
+    tools:context=".ViewSentPostActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Post sent to you"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/post"
+        android:layout_width="match_parent"
+        android:layout_height="225dp"
+        android:padding="10dp"
+        app:srcCompat="@drawable/plus" />
+
+    <TextView
+        android:id="@+id/txtDes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <ListView
+        android:id="@+id/postView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="15dp" />
+</LinearLayout>
